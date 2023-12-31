@@ -1,0 +1,21 @@
+baseURL: https://finddest.com/
+languageCode: en-us
+params:
+  contact:
+    email: contact@finddest.com
+    phone: +1 202-555-1212
+  subtitle: The Best Widgets on Earth
+title: Finddest, Inc.
+theme: 'ananke'
+build:
+  buildStats:
+    enable: true
+  cachebusters:
+  - source: assets/watching/hugo_stats\.json
+    target: styles\.css
+  - source: (postcss|tailwind)\.config\.js
+    target: css
+  - source: assets/.*\.(js|ts|jsx|tsx)
+    target: js
+  - source: assets/.*\.(.*)$
+    target: $1
