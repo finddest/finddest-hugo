@@ -1,3 +1,4 @@
 baseURL = 'https://finddest.com/'
 languageCode = 'en-us'
 title = 'Find destination for your excursions'
+theme = 'ananke'
